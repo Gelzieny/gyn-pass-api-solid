@@ -1,0 +1,19 @@
+{
+  "name": "gyn-pass-api-solid",
+  "version": "1.0.0",
+  "description": "GymPass Style app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gelzieny/gyn-pass-api-solid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}

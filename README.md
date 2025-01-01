@@ -31,3 +31,26 @@ GymPass Style app.
 - [] Os dados da aplicação precisam esta persistidos em um banco PostgreSQL;
 - [] Todas lista de dados precisam estar paginadas com 20 itens por página;
 - [] O usuário deve ser identicado por um JWT (JSON Web Token);
+
+
+### Comandos Docker
+````bash
+# Rodando docker compose
+$ docker-compose -f DockerConfig/docker-compose.yml up -d
+
+# Verificar os contêineres em execução
+$ docker ps
+````
+
+### Comandos Prisma
+
+```` bash
+#  Cria e aplica uma nova migração em um ambiente de desenvolvimento.
+$ yarn prisma migrate dev
+
+# Gera o cliente Prisma baseado no esquema atual. Use este comando sempre que atualizar o schema.prisma
+$ yarn prisma generate
+
+# Abre o Prisma Studio, uma interface gráfica para gerenciar os dados no banco.
+$ yarn prisma studio
+````

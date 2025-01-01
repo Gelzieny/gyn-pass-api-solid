@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -17,8 +19,14 @@
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@prisma/client": "6.1.0",
     "@rocketseat/eslint-config": "2.2.2",
     "@types/node": "22.10.3",
+    "eslint": "9.17.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "prettier": "3.4.2",
+    "prisma": "6.1.0",
     "tsup": "8.3.5",
     "tsx": "4.19.2",
     "typescript": "5.7.2"

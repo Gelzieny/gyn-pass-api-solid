@@ -1,5 +1,6 @@
 {
   "name": "gyn-pass-api-solid",
+  "type": "module",
   "version": "1.0.0",
   "description": "GymPass Style app.",
   "main": "index.js",
@@ -7,6 +8,8 @@
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
     "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -30,7 +33,10 @@
     "prisma": "6.1.0",
     "tsup": "8.3.5",
     "tsx": "4.19.2",
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "vite": "6.0.6",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "2.1.8"
   },
   "dependencies": {
     "bcryptjs": "2.4.3",
